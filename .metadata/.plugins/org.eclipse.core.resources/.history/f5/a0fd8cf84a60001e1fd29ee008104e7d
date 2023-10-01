@@ -1,0 +1,18 @@
+package com.pksoftware.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.pksoftware.entity.PaymentDetails;
+import com.pksoftware.service.PaymentDetailsService;
+
+public class PaymentDetailsController {
+
+		@Autowired
+		PaymentDetailsService detailsService;
+		
+		public PaymentDetails getObject() {
+			PaymentDetails details = new PaymentDetails();
+			details = detailsService.getObjectPaymentdetails();
+			return details;
+		}
+}

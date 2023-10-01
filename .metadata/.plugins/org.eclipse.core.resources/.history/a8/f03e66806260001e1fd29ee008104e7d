@@ -1,0 +1,8 @@
+package com.pksoftware.feignservice;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(url="http://localhost:8382", value="itemdetails")
+public interface ItemDetailsFeignClient {
+
+}

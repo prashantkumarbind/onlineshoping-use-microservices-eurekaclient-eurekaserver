@@ -1,0 +1,15 @@
+package com.pksoftware.entity;
+
+public class UserDetails {
+	
+
+	String username;
+	String address;
+	String email;
+	String mobile;
+	String city;
+	String zip;
+	String shopingdate;
+	
+
+}

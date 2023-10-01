@@ -1,0 +1,10 @@
+package com.pksoftware.feignservice;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(url="http://localhost:8383", value="paymentdetails")
+public interface PaymentDetailsFeignClient {
+
+	
+		@GetMapping("/paymentdetails")
+}

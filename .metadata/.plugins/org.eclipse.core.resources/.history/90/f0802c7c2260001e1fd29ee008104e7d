@@ -1,0 +1,23 @@
+package com.pksoftware.entity;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class UserDetails {
+		
+		@Value("PRASHANT KUMAR")
+		String username;
+		@Value("CHAKIYA GIRDKOT HANDIA")
+		String address;
+		@Value("kumarbind463060@gmal.com")
+		String email;
+		@Value("8853292074")
+		String mobile;
+		@Value("PRAYAGRAJ")
+		String city;
+		@Value("221502")
+		String zip;
+		@Value("01/10/2023")
+		String shopingdate;
+		
+		
+}

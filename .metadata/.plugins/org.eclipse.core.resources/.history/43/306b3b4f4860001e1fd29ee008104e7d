@@ -1,0 +1,13 @@
+package com.pksoftware.entity;
+
+
+
+public class PaymentDetails {
+
+		String paymentMethod;
+		String paymentAmount;
+		String payemntDate;
+		String accountNo;
+		String bankName;
+		
+}

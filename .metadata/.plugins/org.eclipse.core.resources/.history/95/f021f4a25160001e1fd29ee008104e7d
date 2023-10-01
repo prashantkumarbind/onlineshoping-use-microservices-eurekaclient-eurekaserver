@@ -1,0 +1,33 @@
+package com.pksoftware.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.client.RestTemplate;
+
+import com.pksoftware.entity.Handling;
+import com.pksoftware.entity.UserDetails;
+
+@Controller
+public class HandlingController {
+
+		@Autowired
+		RestTemplate restTemplate;
+		
+		@ResponseBody
+		@GetMapping("testing/{name}")
+		public String test(@PathVariable String name) {
+			
+			   return "Your Name is the::"+name;
+		}
+		//************************ FRIST USE OF THE RestTemplate class exchange method**************************
+		@ResponseBody
+		@GetMapping("/finalrecord/{id}")
+		public Handling getTotalDetails(@PathVariable int id) {
+			
+			ResponseEntity<UserDetails> userDetails = restTemplate.exchange("localhost:8381/userdetai", null, null, null)
+		}
+}

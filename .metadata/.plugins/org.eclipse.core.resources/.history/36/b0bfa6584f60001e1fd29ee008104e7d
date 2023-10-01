@@ -1,0 +1,12 @@
+package com.pksoftware.entity;
+
+
+public class ItemDetails {
+	
+	String itemname;
+	String itemprize;
+	String itemSelectDate;
+	String itemMfd;
+	String itemExp;
+	String itemWeight;
+}

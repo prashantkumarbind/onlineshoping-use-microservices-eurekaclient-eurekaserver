@@ -1,0 +1,21 @@
+package com.pksoftware.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.pksoftware.entity.ItemDetails;
+import com.pksoftware.service.ItemDetailsService;
+
+@Controller
+public class ItemDetailsController {
+
+		@Autowired
+		ItemDetailsService detailsService;
+	
+		public ItemDetails getObjectForReturn() {
+			ItemDetails details=null;
+			details = detailsService.getObjectItemDetails();
+			return details;
+		}
+	
+}

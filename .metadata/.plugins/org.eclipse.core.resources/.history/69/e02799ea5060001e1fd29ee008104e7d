@@ -1,0 +1,20 @@
+package com.pksoftware.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class HandlingController {
+
+		
+		@ResponseBody
+		@GetMapping("testing/{name}")
+		public String test(@PathVariable String name) {
+			
+			   return "Your Name is the::"+name;
+		}
+		//************************ FRIST USE OF THE RestTemplate class exchange method**************************
+		
+}

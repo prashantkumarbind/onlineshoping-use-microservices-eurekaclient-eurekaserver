@@ -1,0 +1,13 @@
+package com.pksoftware;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ItemDetailsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ItemDetailsApplication.class, args);
+	}
+
+}
